@@ -13,46 +13,53 @@
 
 <body>
     <main>
-        <!-- Logo -->
-        <div class="logo">Logo</div>
-        <!-- Heading -->
-        <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
-        </div>
-
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/images/rpsls-logo(2).png" alt="Logo">
+            </div>
+            <!-- Heading -->
+            <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
+            </div>
+        </header>
         <!-- Game area -->
         <div class="game-area">
             <!-- Game Controls -->
             <div class="game-controls">
-                <div class="game-img">Rock img
-                    <a href="game-btn">Rock</a>
+                <!-- Rock button -->
+                <div class="game-img"><img src="assets/images/rock.png" alt="Rock hand">
+                    <button class="rock-btn game-btn"><i class="fa-solid fa-1"></i> Rock</button>
                 </div>
-                <div class="game-img">Paper img
-                    <a href="game-btn">Paper</a>
+                <!-- Paper button -->
+                <div class="game-img"><img src="assets/images/paper.png" alt="Paper hand">
+                    <button class="paper-btn game-btn"><i class="fa-solid fa-2"></i> Paper</button>
                 </div>
-                <div class="game-img">Scissors img
-                    <a href="game-btn">Scissors</a>
+                <!-- Scissors button -->
+                <div class="game-img"><img src="assets/images/scissors.png" alt="Scissors hand">
+                    <button class="scissors-btn game-btn"><i class="fa-solid fa-3"></i> Scissors</button>
                 </div>
-                <div class="game-img">Lizard img
-                    <a href="game-btn">Lizard</a>
+                <!-- Lizard button -->
+                <div class="game-img"><img src="assets/images/lizard.png" alt="Lizard hand">
+                    <button class=" lizard-btn game-btn"><i class="fa-solid fa-4"></i> Lizard</button>
                 </div>
-                <div class="game-img">Spock img
-                    <a href="game-btn">Spock</a>
+                <!-- Spock button -->
+                <div class="game-img"><img src="assets/images/spock.png" alt="Spock hand">
+                    <button class="spock-btn game-btn"><i class="fa-solid fa-5"></i> Spock</button>
                 </div>
 
                 <!-- Play game button -->
                 <div class="play-game">
-                    <a href="play-btn">Play Game</a>
+                    <button class="play-btn"><i class="fa-solid fa-play"></i> Play Game</button>
                 </div>
 
                 <!-- Score area -->
-                <div class="score-area"> Score area
-                    <p class="scores">User Scores <span class="score">0</span></p>
-                    <p class="scores">Computer Scores <span class="score">0</span></p>
-                </div>
+                <div class="user-score"><i class="fa-solid fa-user"></i> User Scores: <span class="user-count">0</span></div>
+                <div class="computer-score"><i class="fa-solid fa-robot"></i> Computer Scores: <span class="computer-count">0</span></div>
             </div>
         </div>
     </main>
-    
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/b913c3c0e5.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

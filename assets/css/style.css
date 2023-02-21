@@ -1,3 +1,183 @@
+/* Body styling */
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
 body {
-    background-color: gray;
+    font-family: Kanit, sans-serif;
+    font-weight: 300;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Main game area */
+main {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, #845ec2, #b39cd0);
+    box-shadow: -11px -12px 20px 0px #4b4453, 13px 13px 10px #b0a8b9;
+    border-radius: 10px;
+    width: 1200px;
+    height: 800px
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* logo */
+.logo {
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px;
+}
+
+/* heading */
+.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    width: 600px;
+}
+
+/* Game area */
+
+.game-area {
+    background-color: #FBEAFF;
+    border-radius: 10px;
+    margin: 30px 10px;
+    height: 500px;
+}
+
+.game-controls {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.game-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.user-score {
+    grid-area: 3 / 2;
+    background-color: #f9f871;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.user-count {
+    color: green;
+    font-weight: bold;
+}
+
+.computer-score {
+    grid-area: 3 / 4;
+    background-color: #f9f871;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.computer-count {
+    color: red;
+    font-weight: bold;
+}
+
+/* Font Icons */
+
+i {
+    font-size: 1rem;
+}
+
+/* Buttons */
+.game-btn {
+    background-color: #00c9a7;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.rock-btn:active,
+.rock-btn:hover {
+    background-color: #ff8080;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+}
+
+.paper-btn:active,
+.paper-btn:hover {
+    background-color: #f9f871;
+    color: black;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+}
+
+.scissors-btn:active,
+.scissors-btn:hover {
+    background-color: #e480ff;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+}
+
+.lizard-btn:active,
+.lizard-btn:hover {
+    background-color: #86de86;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+}
+
+.spock-btn:active,
+.spock-btn:hover {
+    background-color: #80b3ff;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
+}
+
+
+.play-game {
+    grid-area: 2 / 3;
+}
+
+.play-btn {
+    background-color: #ff6f91;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.play-btn:hover {
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
 }
