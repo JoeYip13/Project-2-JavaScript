@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
 </head>
 
 <body>
     <main>
+
         <header>
             <!-- Logo -->
             <div class="logo">
@@ -22,44 +24,72 @@
             <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
             </div>
         </header>
+
         <!-- Game area -->
         <div class="game-area">
             <!-- Game Controls -->
             <div class="game-controls">
                 <!-- Rock button -->
-                <div class="game-img"><img src="assets/images/rock.png" alt="Rock hand">
-                    <button class="rock-btn game-btn"><i class="fa-solid fa-1"></i> Rock</button>
+                <div class="game-selection">
+                    <button data-selection="Rock" class="rock-btn game-btn">
+                        <img src="assets/images/rock.png" alt="Rock hand">
+                    </button>
                 </div>
                 <!-- Paper button -->
-                <div class="game-img"><img src="assets/images/paper.png" alt="Paper hand">
-                    <button class="paper-btn game-btn"><i class="fa-solid fa-2"></i> Paper</button>
+                <div class="game-selection">
+                    <button data-selection="Paper" class="paper-btn game-btn">
+                        <img src="assets/images/paper.png" alt="Paper hand">
+                    </button>
                 </div>
                 <!-- Scissors button -->
-                <div class="game-img"><img src="assets/images/scissors.png" alt="Scissors hand">
-                    <button class="scissors-btn game-btn"><i class="fa-solid fa-3"></i> Scissors</button>
+                <div class="game-selection">
+                    <button data-selection="Scissors" class="scissors-btn game-btn">
+                        <img src="assets/images/scissors.png" alt="Scissors hand">
+                    </button>
                 </div>
                 <!-- Lizard button -->
-                <div class="game-img"><img src="assets/images/lizard.png" alt="Lizard hand">
-                    <button class=" lizard-btn game-btn"><i class="fa-solid fa-4"></i> Lizard</button>
+                <div class="game-selection">
+                    <button data-selection="Lizard" class=" lizard-btn game-btn">
+                        <img src="assets/images/lizard.png" alt="Lizard hand">
+                    </button>
                 </div>
                 <!-- Spock button -->
-                <div class="game-img"><img src="assets/images/spock.png" alt="Spock hand">
-                    <button class="spock-btn game-btn"><i class="fa-solid fa-5"></i> Spock</button>
+                <div class="game-selection">
+                    <button data-selection="Spock" class="spock-btn game-btn">
+                        <img src="assets/images/spock.png" alt="Spock hand">
+                    </button>
                 </div>
+            </div>
 
+            <!-- Result area -->
+            <div class="result-area">
                 <!-- Play game button -->
-                <div class="play-game">
-                    <button class="play-btn"><i class="fa-solid fa-play"></i> Play Game</button>
+                <div class="user-choice">
+                    <p class="choice-display"><i class="fa-solid fa-user"></i> You chose: <span id="user-choice"></span></p>
                 </div>
+                <div class="computer-choice">
+                    <p class="choice-display"><i class="fa-solid fa-robot"></i> Computer chose: <span id="computer-choice"></span></p>
+                </div>
+            </div>
 
-                <!-- Score area -->
-                <div class="user-score"><i class="fa-solid fa-user"></i> User Scores: <span class="user-count">0</span></div>
-                <div class="computer-score"><i class="fa-solid fa-robot"></i> Computer Scores: <span class="computer-count">0</span></div>
+            <div class="result-display">
+                <p><span id="result"> Select a hand </span></p>
+            </div>
+
+            <!-- Score area -->
+            <div class="score-area">
+                <div class="user-score"><i class="fa-solid fa-user"></i> User Score: <span id="user-count">0</span>
+                </div>
+                <div class="computer-score"><i class="fa-solid fa-robot"></i> Computer Score: <span id="computer-count">0</span>
+                </div>
             </div>
         </div>
     </main>
+
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/b913c3c0e5.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 
