@@ -171,6 +171,90 @@ main {
     box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
 }
 
+
+/* Modal */
+.question {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    margin: 0.3125em;
+}
+
+.fa-circle-question {
+    font-size: 1.25rem;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    width: 80%;
+    top: 10%;
+    padding: 1.2em;
+    min-height: 50%;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 20%); 
+    border-radius: 15px;
+  }
+  
+  .modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .modal ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+  }
+  
+  .btn-open {
+    position: absolute;
+  }
+  
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.3125em;
+    background: none;
+    border: none;
+  }
+
+  .fa-circle-xmark {
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: none;
+    background-color: none;
+}
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
 /* Media Queries */
 
 @media (min-width: 760px) {
@@ -228,9 +312,20 @@ main {
         width: 50%;
     }
 
+    .modal {
+        width: 80%;
+        top: -20%;
+    }
+
 }
 
 @media (min-width: 1500px) {
+
+    .question {
+        top: 0;
+        left: 0;
+        margin: 0.6250em;
+    }
 
     .user-choice,
     .computer-choice {

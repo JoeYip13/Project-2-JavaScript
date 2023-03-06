@@ -16,6 +16,7 @@
     <main>
 
         <header>
+            <button class="btn btn-open question"><i class="fa-solid fa-circle-question"></i></button>
             <!-- Logo -->
             <div class="logo">
                 <img src="assets/images/rpsls-logo(2).png" alt="Logo">
@@ -24,6 +25,30 @@
             <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
             </div>
         </header>
+
+        <!-- Modal Section -->
+        <section class="modal hidden">
+            <div class="flex">
+                <button class="btn-close"><i class="fa-regular fa-circle-xmark"></i></button>
+            </div>
+
+            <div>
+                <img src="assets/images/rpsls-logo(2).png" alt="rpsls-logo">
+                <h2>Game Rules</h2>
+                <p>
+                    First to reach 10 points wins the match!
+                    <ul>
+                        <li>Rock beats Scissors & Lizard</li>
+                        <li>Paper beats Rock & Spock</li>
+                        <li>Scissors beats Paper & Lizard</li>
+                        <li>Lizard beats Paper & Spock</li>
+                        <li>Spock beats Rock & Scissors</li>
+                    </ul>
+                </p>
+            </div>
+
+        </section>
+        <div class="overlay hidden"></div>
 
         <!-- Game area -->
         <div class="game-area">
