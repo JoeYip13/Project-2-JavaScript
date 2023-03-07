@@ -10,6 +10,7 @@
 body {
     font-family: Kanit, sans-serif;
     font-weight: 300;
+    background-color: #00c9a7;
 }
 
 img {
@@ -17,11 +18,11 @@ img {
     display: block;
 }
 
-/* Mobile Screen Size */
+/* Mobile Screen Size 320px upto 425px*/
 
 main {
     background-image: linear-gradient(to bottom right, #845ec2, #b39cd0);
-    box-shadow: -11px -12px 20px 0px #4b4453, 13px 13px 10px #b0a8b9;
+    box-shadow: 0px 0px 20px 10px #4b4453;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +75,8 @@ main {
 .user-choice,
 .computer-choice {
     background-color: #ff6f91;
-    color: white;
+    color: black;
+    font-weight: bold;
     font-size: 1rem;
     padding: 0.625em 1em;
     text-align: center;
@@ -86,9 +88,10 @@ main {
     justify-content: center;
 }
 
-.result-display p {
+#result {
     background-color: #ff6f91;
-    color: white;
+    color: black;
+    font-weight: bold;
     width: 50%;
     text-align: center;
     font-size: 1rem;
@@ -195,7 +198,7 @@ main {
     min-height: 50%;
     position: absolute;
     z-index: 2;
-    background-color: white;
+    background-color: #fbeaff;
     box-shadow: 0 0 10px 5px rgb(0 0 0 / 20%); 
     border-radius: 15px;
   }
@@ -255,14 +258,16 @@ main {
   }
 
 
-/* Media Queries */
+/* Media Queries from 760px. Tablet viewing */
 
 @media (min-width: 760px) {
 
+    /* Increase heading size */
     .heading {
-        font-size: 2rem;
+        font-size: 2rem; 
     }
 
+    /* Adjust the width of the choice display and score display for tablet viewing */
     .user-choice,
     .computer-choice {
         width: 30%;
@@ -275,8 +280,10 @@ main {
     
 }
 
+/* For small laptop upto medium desktop viewing */
 @media (min-width: 1000px) {
 
+    /* Moves the main game section into the center of the page  */
     main {
         border-radius: 10px;
         position: absolute;
@@ -286,6 +293,7 @@ main {
         height: auto;
     }
 
+    /* Adjust logo and heading size to suit desktop veiwing */
     .logo {
         width: 25%;
     }
@@ -294,6 +302,7 @@ main {
         font-size: 1.5rem;
     }
 
+    /* Displays the game buttons in a row */
     .game-controls {
         flex-wrap: nowrap;
     }
@@ -302,6 +311,7 @@ main {
         margin: 0;
     }
 
+    /* Adjust the width of the choice display and score display to suit desktop viewing */
     .user-choice,
     .computer-choice {
         width: 50%;
@@ -312,21 +322,24 @@ main {
         width: 50%;
     }
 
+    /* Positions the modal display higher up in aspect ratio to the screen. */
     .modal {
-        width: 80%;
         top: -20%;
     }
 
 }
 
+    /* For larger desktop viewing */
 @media (min-width: 1500px) {
 
+    /* Position the 'question mark' font awesoem icon to the corner of the screen */
     .question {
         top: 0;
         left: 0;
         margin: 0.6250em;
     }
 
+    /* Adjust the width of the choice display and score display to suit desktop viewing */
     .user-choice,
     .computer-choice {
         width: 30%;
