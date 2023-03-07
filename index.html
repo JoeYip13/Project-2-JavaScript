@@ -16,7 +16,7 @@
     <main>
 
         <header>
-            <button class="btn btn-open question"><i class="fa-solid fa-circle-question"></i></button>
+            <button aria-label="Rules button" class="btn btn-open question"><i class="fa-solid fa-circle-question"></i></button>
             <!-- Logo -->
             <div class="logo">
                 <img src="assets/images/rpsls-logo(2).png" alt="Logo">
@@ -29,7 +29,7 @@
         <!-- Modal Section -->
         <section class="modal hidden">
             <div class="flex">
-                <button class="btn-close"><i class="fa-regular fa-circle-xmark"></i></button>
+                <button aria-label="Rules button close" class="btn-close"><i class="fa-regular fa-circle-xmark"></i></button>
             </div>
 
             <div>
@@ -51,64 +51,68 @@
         <div class="overlay hidden"></div>
 
         <!-- Game area -->
-        <div class="game-area">
+        <section class="game-area">
             <!-- Game Controls -->
             <div class="game-controls">
                 <!-- Rock button -->
                 <div class="game-selection">
-                    <button data-selection="Rock" class="rock-btn game-btn">
+                    <button aria-label="Rock button" data-selection="Rock" class="rock-btn game-btn">
                         <img src="assets/images/rock.png" alt="Rock hand">
                     </button>
                 </div>
                 <!-- Paper button -->
                 <div class="game-selection">
-                    <button data-selection="Paper" class="paper-btn game-btn">
+                    <button aria-label="Paper button" data-selection="Paper" class="paper-btn game-btn">
                         <img src="assets/images/paper.png" alt="Paper hand">
                     </button>
                 </div>
                 <!-- Scissors button -->
                 <div class="game-selection">
-                    <button data-selection="Scissors" class="scissors-btn game-btn">
+                    <button aria-label="Scissors button" data-selection="Scissors" class="scissors-btn game-btn">
                         <img src="assets/images/scissors.png" alt="Scissors hand">
                     </button>
                 </div>
                 <!-- Lizard button -->
                 <div class="game-selection">
-                    <button data-selection="Lizard" class=" lizard-btn game-btn">
+                    <button aria-label="Lizard button" data-selection="Lizard" class=" lizard-btn game-btn">
                         <img src="assets/images/lizard.png" alt="Lizard hand">
                     </button>
                 </div>
                 <!-- Spock button -->
                 <div class="game-selection">
-                    <button data-selection="Spock" class="spock-btn game-btn">
+                    <button aria-label="Spock button" data-selection="Spock" class="spock-btn game-btn">
                         <img src="assets/images/spock.png" alt="Spock hand">
                     </button>
                 </div>
             </div>
 
-            <!-- Result area -->
-            <div class="result-area">
-                <!-- Play game button -->
-                <div class="user-choice">
-                    <p class="choice-display"><i class="fa-solid fa-user"></i> You chose: <span id="user-choice"></span></p>
-                </div>
-                <div class="computer-choice">
-                    <p class="choice-display"><i class="fa-solid fa-robot"></i> Computer chose: <span id="computer-choice"></span></p>
-                </div>
-            </div>
-
-            <div class="result-display">
-                <p><span id="result"> Select a hand </span></p>
-            </div>
-
             <!-- Score area -->
-            <div class="score-area">
+            <section class="score-area">
                 <div class="user-score"><i class="fa-solid fa-user"></i> User Score: <span id="user-count">0</span>
                 </div>
                 <div class="computer-score"><i class="fa-solid fa-robot"></i> Computer Score: <span id="computer-count">0</span>
                 </div>
+            </section>
+
+            <!-- Result area -->
+            <section class="result-area">
+                <!-- Play game button -->
+                <div class="user-choice">
+                    <p class="choice-display"><i class="fa-solid fa-user"></i> You chose: <span id="user-choice"></span>
+                    </p>
+                </div>
+                <div class="computer-choice">
+                    <p class="choice-display"><i class="fa-solid fa-robot"></i> Computer chose: <span
+                            id="computer-choice"></span></p>
+                </div>
+            </section>
+
+            <div class="result-display">
+                <span id="result"> Select a hand </span>
             </div>
-        </div>
+
+
+        </section>
     </main>
 
     <!-- Font Awesome Script -->
