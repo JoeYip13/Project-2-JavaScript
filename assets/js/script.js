@@ -208,3 +208,19 @@ function theWinner(selection, computerSelection) {
 function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
+
+/**
+ * Function to determine who wins the match
+ * @function matchWinner checks when the value of the user score or computer score span is equal to 10. Changes the result display to display the winner. 
+ */
+function matchWinner() {
+    if (userScoreSpan.innerText === '10') {
+        resultDisplay.innerHTML = "Congradulations! You Won the Match!";
+        playAgainBtn.style.display = 'block';
+    }
+    if (computerScoreSpan.innerText === '10') {
+        resultDisplay.innerHTML = "Computer wins the Match!";
+        playAgainBtn.style.display = 'block';
+    }
+
+}
