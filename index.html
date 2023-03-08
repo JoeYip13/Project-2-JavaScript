@@ -13,8 +13,9 @@
 </head>
 
 <body>
+    <!-- Main game area -->
     <main>
-
+        <!-- Header Section contains Logo and Heading -->
         <header>
             <button aria-label="Rules button" class="btn btn-open question"><i class="fa-solid fa-circle-question"></i></button>
             <!-- Logo -->
@@ -23,7 +24,6 @@
             </div>
             <!-- Heading -->
             <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
-            </div>
         </header>
 
         <!-- Modal Section -->
@@ -35,7 +35,6 @@
             <div>
                 <img src="assets/images/rpsls-logo(2).png" alt="rpsls-logo">
                 <h2>Game Rules</h2>
-                <p>
                     First to reach 10 points wins the match!
                     <ul>
                         <li>Rock beats Scissors & Lizard</li>
@@ -44,13 +43,12 @@
                         <li>Lizard beats Paper & Spock</li>
                         <li>Spock beats Rock & Scissors</li>
                     </ul>
-                </p>
             </div>
 
         </section>
         <div class="overlay hidden"></div>
 
-        <!-- Game area -->
+        <!-- Game section -->
         <section class="game-area">
             <!-- Game Controls -->
             <div class="game-controls">
@@ -86,7 +84,7 @@
                 </div>
             </div>
 
-            <!-- Score area -->
+            <!-- Score section -->
             <section class="score-area">
                 <div class="user-score"><i class="fa-solid fa-user"></i> User Score: <span id="user-count">0</span>
                 </div>
@@ -94,7 +92,7 @@
                 </div>
             </section>
 
-            <!-- Result area -->
+            <!-- Result section -->
             <section class="result-area">
                 <!-- Play game button -->
                 <div class="user-choice">
@@ -109,6 +107,7 @@
 
             <div class="result-display">
                 <span id="result"> Select a hand </span>
+                <button aria-label="Play again button" id="play-again">Play Again</button>
             </div>
 
 
