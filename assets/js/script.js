@@ -211,16 +211,37 @@ function incrementScore(scoreSpan) {
 
 /**
  * Function to determine who wins the match
- * @function matchWinner checks when the value of the user score or computer score span is equal to 10. Changes the result display to display the winner. 
+ * @function matchWinner checks when the value of the user score or computer score span is equal to 10. Changes the result display to display the winner. Runs the 'disableGameBtn function. Displays a the 'playAgainBtn.
  */
 function matchWinner() {
     if (userScoreSpan.innerText === '10') {
         resultDisplay.innerHTML = "Congradulations! You Won the Match!";
         playAgainBtn.style.display = 'block';
+        disableGameBtn();
+        playAgainBtn.addEventListener('click', resetGame);
     }
     if (computerScoreSpan.innerText === '10') {
         resultDisplay.innerHTML = "Computer wins the Match!";
         playAgainBtn.style.display = 'block';
+        disableGameBtn();
+        playAgainBtn.addEventListener('click', resetGame);
     }
 
+}
+
+/**
+ * Disable game buttons once the game match has won
+ * @function disableGameBtn - disables the game buttons so it does not allow the user to carry the game on once the match has reached a winner.
+ */
+function disableGameBtn() {
+    for (let userChoice of userChoices)
+    userChoice.disabled = true;
+}
+
+/**
+ * Resets the game 
+ * @function resetGame - resets the game. Reloads the page. 
+ */
+function resetGame() {
+    document.location.reload();
 }
