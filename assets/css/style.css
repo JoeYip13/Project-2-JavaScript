@@ -18,6 +18,10 @@ img {
     display: block;
 }
 
+h2 {
+    display: none;
+}
+
 /* Mobile Screen Size 320px upto 425px*/
 
 main {
@@ -278,6 +282,15 @@ main {
   .hidden {
     display: none;
   }
+
+
+  /* 404 Page */
+  .container
+{
+width:300px;
+margin: 0 auto;
+margin-top:15%;
+}
 
 
 /* Media Queries from 760px. Tablet viewing */
