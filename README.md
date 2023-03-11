@@ -184,7 +184,6 @@ I wanted to create a modal that displays the game rules. I followed a great tuto
 ## Validation
 
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
-This does show three error warnings. Because I used Sections to divide areas up in the html. I don't have use for any Heading elements. 
 <div align="center">
     <img src="assets/images/html-validation.jpg" alt="Html validation">
 </div>
