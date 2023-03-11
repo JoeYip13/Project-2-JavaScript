@@ -135,14 +135,18 @@ openModalBtn.addEventListener('click', openModal);
  */
 userChoices.forEach(userChoice => {
     userChoice.addEventListener('click', e => {
-        const selectionName = userChoice.dataset.selection;
-        const selection = gameRules.find(selection => selection.name === selectionName);
+        const selectionName = userChoice.dataset.selection; // Variable selectionName gets the data-selection name
+        const selection = gameRules.find(selection => selection.name === selectionName); // Variable selection finds in the GameRules Array name that equals to the data-selection name. 
         let userSelection = selection.name;
-        userChoiceDisplay.innerHTML = userSelection; // Prints the selection name user has chosen in the span id 
-
-        console.log('You chose' + ' ' + selection.name);
-
+        userChoiceDisplay.innerHTML = userSelection; // Prints the selection name the user has chosen in the span id 
         makeChoice(selection);
+        try {
+            if (userSelection !== selectionName) throw "That's not a hand selection..";
+        }
+        catch(err) {
+        alert("Hey..." + err);
+        }
+
     });
 });
 
@@ -155,8 +159,6 @@ function makeChoice(selection) {
     const computerSelection = computerChoice();
     computerChoiceDisplay.innerHTML = computerSelection.name; // Prints the name computer has chosen in the span id 
     theWinner(selection, computerSelection);
-    
-    console.log('Computer chose' + ' ' + computerSelection.name);
 }
 
 
@@ -179,26 +181,18 @@ function theWinner(selection, computerSelection) {
     if (selection.name === computerSelection.name) {
         resultDisplay.innerHTML = 'Oh Snap! Looks like we tied. Lets Go Again!';
         resultDisplay.style.backgroundColor = '#ff6f91';
-        console.log('Tie, we play again');
     } else {
         if (selection.beats.includes(computerSelection.name)) {
             resultDisplay.innerHTML = 'You Win!';
             resultDisplay.style.backgroundColor = '#38B124';
             incrementScore(userScoreSpan);
-            console.log('You Win!');
         } else {
             resultDisplay.innerHTML = 'You Lose!';
             resultDisplay.style.backgroundColor = '#f11919';
             incrementScore(computerScoreSpan);
-            console.log('Computer Wins');
         }
     }
-
     matchWinner();
-
-    console.log('User' + ' ' + userScoreSpan.innerText);
-    console.log('Computer' + ' ' + computerScoreSpan.innerText);
-
 }
 
 /**
@@ -215,7 +209,7 @@ function incrementScore(scoreSpan) {
  */
 function matchWinner() {
     if (userScoreSpan.innerText === '10') {
-        resultDisplay.innerHTML = "Congradulations! You Won the Match!";
+        resultDisplay.innerHTML = "Congratulations! You Won the Match!";
         playAgainBtn.style.display = 'block';
         disableGameBtn();
         playAgainBtn.addEventListener('click', resetGame);
@@ -226,7 +220,6 @@ function matchWinner() {
         disableGameBtn();
         playAgainBtn.addEventListener('click', resetGame);
     }
-
 }
 
 /**
