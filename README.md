@@ -29,7 +29,7 @@
     - [Modal](#modal)
     - [Fonts](#fonts)
     - [Icons](#icons)
-    - [Colors](#colors)
+    - [Colours](#colours)
     - [Images](#images)
     - [Styling](#styling)
     </details></li>
@@ -116,8 +116,8 @@ User Goals are:
 
 ## Visual Design
 ### Figma
-Figma was used in this process to help layout the structure and design of the website. Initially I planned to have buttons with the name of the each button below the images as shown in the Figma design. But throughout the development stages, I decided to use the images as the buttons itself.<br>
-The white background changed from plain white to the color I used in the buttons. This was suggested by my mentor and it highlighted the main game better. 
+Figma was used in this process to help layout the structure and design of the website. Initially I planned to have buttons with the name of each icon below the images as shown in the Figma design. But throughout the development stages, I decided to use the images as the buttons itself.<br>
+The white background changed from plain white to the colour I used in the buttons. This was suggested by my mentor and it highlighted the main game better. 
 
 For desktop:
 <div><img src="assets/images/Figma-design(3).jpg" alt="Figma design for desktop"></div>
@@ -129,7 +129,7 @@ Adobe Express was used to create the logo and the game buttons
 <div><img src="assets/images/AE-logo-design(1).jpg" alt="Adobe Logo Design"></div>
 
 ### Buttons
-Game buttons was designed on Adobe Express. For the game images I simply cropped the different hand images in the logo into individual images and used them as the primarily game buttons. 
+Game buttons were designed on Adobe Express. For the game images I simply cropped the different hand images in the logo into individual images and used them as the primary game buttons. 
 <div><img src="assets/images/AE-logo-design(2).jpg" alt="Adobe Logo Design"></div>
 
 ### Modal
@@ -138,7 +138,7 @@ I wanted to create a modal that displays the game rules. I followed a great tuto
 
 
 ### Fonts 
-- Primary font was Kanit 300. I chose this font because it showed a arcade like font style which ideal for a game. 
+- Primary font was Kanit 300. I chose this font because it showed an arcade like font style which is ideal for a game. 
 <div><img src="assets/images/google-font.jpg" alt="Google Fonts Kanit 300"></div>
 
 ### Icons
@@ -148,9 +148,9 @@ I wanted to create a modal that displays the game rules. I followed a great tuto
 - Icons are taken from the [Font Awesome](https://fontawesome.com/) Icon library and are utilised as classes in the `<i>` tag.
 - Icons are utilised in the game for user and computer display. The question mark icon is used to open the game rules modal and the "xmark" icon is used to close the modal screen.
 
-### Colors 
+### Colours 
 
-- I wanted the game quite bold with bright colors. Inspiration of the use of the colors were taken from the logo.5 different buttons so I used 5 different colors. Primarily started off with purple and once using [ColorSpace](https://mycolor.space/) to generate a nice color palette. I ended up with the 5+ colours.
+- I wanted the game quite bold with bright colours. Inspiration of the use of the colours were taken from the logo; 5 different buttons so I used 5 different colours. Primarily started off with purple and once using [ColorSpace](https://mycolor.space/) to generate a nice colour palette. I ended up with the 5+ colours.
 - Text was used either black or white depending on the back ground colour of the page. I wanted it to be a good contrast between the pages. But once I ran the website through lighthouse and the contrast seem to have lost with the white font. I changed them all to black as the colours used were quite vibrant and the fonts in white did lose visual. 
 
 <div align="center"><img src="assets/images/colors.jpg" alt="Color pallete"></div>
@@ -243,7 +243,7 @@ I used Code Institute gitpod full template and HTML and CSS Essentials in the Fu
 
 ## Media
 
-- Only image used are from Logo - [pngitem](https://www.pngitem.com/middle/hJJoibm_rock-paper-scissors-lizard-spock-is-a-funny/)
+- All image used are from Logo - [pngitem](https://www.pngitem.com/middle/hJJoibm_rock-paper-scissors-lizard-spock-is-a-funny/)
 
 ----
 
