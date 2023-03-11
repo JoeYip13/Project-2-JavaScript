@@ -37,8 +37,9 @@ main {
 
 .heading {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    margin: 0.6250em;
 }
 
 .game-controls {
@@ -176,6 +177,7 @@ main {
     box-shadow: 0 0 10px 5px rgb(0 0 0 / 60%);
 }
 
+/* This button is displayed once score reaches 10. Function in JavaScript is matchWinner() */
 #play-again {
     display: none;
     background-color: #ff6f91;
@@ -196,7 +198,7 @@ main {
 }
 
 
-/* Modal */
+/* Modal tutuorial followed from [freecodecamp](https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/) */
 .question {
     cursor: pointer;
     border: none;
@@ -284,7 +286,8 @@ main {
 
     /* Increase heading size */
     .heading {
-        font-size: 2rem; 
+        font-size: 2rem;
+        margin: 1em;
     }
 
     /* Adjust the width of the choice display and score display for tablet viewing */
@@ -319,7 +322,8 @@ main {
     }
 
     .heading {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        margin: 0.6250em;
     }
 
     /* Displays the game buttons in a row */
